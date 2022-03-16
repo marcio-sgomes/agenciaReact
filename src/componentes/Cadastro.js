@@ -106,7 +106,7 @@ function Cadastro(){
                                     <div className="col-md-4">
                                         <div className="input-group">
                                             <span className="input-group-addon">Rua</span>
-                                            <input id="rua" name="rua" className="form-control" placeholder="" required="" readonly="readonly" type="text"/>
+                                            <input id="rua" name="rua" className="form-control" placeholder="" required=""  type="text"/>
                                         </div>
 
                                     </div>
@@ -121,7 +121,7 @@ function Cadastro(){
                                     <div className="col-md-3">
                                         <div className="input-group">
                                             <span className="input-group-addon">Bairro</span>
-                                            <input id="bairro" name="bairro" className="form-control" placeholder="" required="" readonly="readonly" type="text"/>
+                                            <input id="bairro" name="bairro" className="form-control" placeholder="" required=""  type="text"/>
                                         </div>
 
                                     </div>

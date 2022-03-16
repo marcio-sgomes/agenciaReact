@@ -3,7 +3,7 @@ import React from "react";
 function Rodape(){
     return(
 <footer className='container-fluid text-center'>
-  <a href='#myPage' title='To Top'>
+  <a href='/' title='To Top'>
     <span className='glyphicon glyphicon-chevron-up'></span>
   </a>
   <p>Agencia <a href='https://www.maisplus.com' title='Visit +Plus'>www.maisplusviagem.com</a></p>

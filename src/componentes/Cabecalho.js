@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import { Form } from "react-bootstrap";
 import {Link} from 'react-router-dom';
 
 function Cabecalho() {
+    const [input, setInput] = useState("")
     return (
         <div>
             <nav className='navbar navbar-default navbar-fixed-top'>
@@ -20,17 +22,17 @@ function Cabecalho() {
                     <div className='collapse navbar-collapse' id='myNavbar'>
                         <ul className='nav navbar-nav navbar-right'>
                             <li><Link to='/'><span className='glyphicon glyphicon-home	
-'></span>INICIO</Link></li>
-                            <li><Link to='/servicos'><span className='glyphicon glyphicon-briefcase	
-'></span>SERVIÇOS</Link></li>
-                            <li><Link to='/portfolio'><span className='	glyphicon glyphicon-user
-'></span>PORTFOLIO</Link></li>
-                            <li><Link to='/precos'><span className='glyphicon glyphicon-usd	
-'></span>PREÇOS</Link></li>
-                            <li><Link to='/cadastro'><span className='glyphicon glyphicon-floppy-disk	
-'></span>CADASTRO</Link></li>
-                            <li><Link to='/contato'><span className='	glyphicon glyphicon-phone-alt
-'></span>CONTATO</Link></li>
+                                '></span>INICIO</Link></li>
+                                                            <li><Link to='/servicos'><span className='glyphicon glyphicon-briefcase	
+                                '></span>SERVIÇOS</Link></li>
+                                                            <li><Link to='/portfolio'><span className='	glyphicon glyphicon-user
+                                '></span>PORTFOLIO</Link></li>
+                                                            <li><Link to='/precos'><span className='glyphicon glyphicon-usd	
+                                '></span>PREÇOS</Link></li>
+                                                            <li><Link to='/cadastro'><span className='glyphicon glyphicon-floppy-disk	
+                                '></span>CADASTRO</Link></li>
+                                                            <li><Link to='/contato'><span className='	glyphicon glyphicon-phone-alt
+                                '></span>CONTATO</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -41,11 +43,19 @@ function Cabecalho() {
                 <p>+plus, sua agência que criar + do que você espera!</p>
                 <form>
                     <div className='input-group'>
-                        <input type='buscar' className='form-control' size='50' placeholder='Buscar' required />
+                         <input type='buscar' className='form-control' size='50' placeholder='Buscar' required />
                         <div className='input-group-btn'>
                             <button type='button' className='btn btn-info'><span className='glyphicon glyphicon-search 	
-'></span> Buscar</button>
+                            '></span> Buscar</button>
                         </div>
+
+                        <Form 
+                        input={input}
+                        setInput={setInput}
+                        type="text"
+                        placeholder="buscar"
+                        />
+                        
                     </div>
                 </form>
             </div>
